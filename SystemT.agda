@@ -11,7 +11,7 @@ module SystemT where
   {- types of the STLC -}
   data Type : Set where
     b : Type             -- uninterpreted base type
-    _⟶_ : Type → Type → Type -- type \=>
+    _⇒_ : Type → Type → Type -- type \=>
 
   {- contexts are lists of Type's -}
   Ctx = ListType
