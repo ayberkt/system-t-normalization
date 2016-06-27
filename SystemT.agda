@@ -7,6 +7,7 @@ module SystemT where
 
   data _∈_ {A : Set} : (x : A) (l : List A) → Set where -- type \in
     i0 : {x : A} {xs : List A} → x ∈ (x ∷ xs)
+    iS : {x y : A} (xs : List A) → x ∈ xs → x ∈ (y ∷ xs)
 
   data TType : Set where
     base  : TType
